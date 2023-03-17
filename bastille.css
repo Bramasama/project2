@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+:root {
+   --primary: #9356DC;
+   --primary-btn: hsl(267, 52%, 62%);
+   --secondary: #FF79DA;
+   --tertiary: #99E2D0;
+   --logo-titles-font:font-family: 'Shrikhand', cursive;
+   --text-font:font-family: 'Roboto', sans-serif;
+   --background-map: #e3e2e2;
+   --background: #f2f2f2;
+   --background-footer: #414040;
+   --footer-letter:#f7f1f1;
+   --letter:#000;
+   --second-letter:#464646;
+
+} 
+
+body {
+margin: 0;
+padding: 0;
+display:block;
+font-family:'Roboto', sans-serif ;
+}
+
+.background-image {
+
+    width: 100%;
+    height: 42vh; 
+}
+
+.background-image img{
+   object-fit: cover;
+   width: 100%;
+   height: 41vh;
+   position: relative;
+   z-index: -1;
+}
+
+/* Logo */
+
+.logo-container {
+   position: relative;
+   display: flex;
+}
+
+.fa-arrow-left{
+   position: relative;
+   top:40%;
+   right: -7%;
+}
+
+.arrow {
+   position: absolute;
+   top: 50%;
+   left: -20px;
+   transform: translateY(-50%);
+   width: 0;
+   height: 0;
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent;
+   border-right: 10px solid #000;
+}
+
+.logo {
+   display: inline-block;
+   margin-left: 20px;
+}
+
+.logo {
+   width: 100%;
+   height: 60px;
+   margin: 0;
+   background-color: var(--background);
+   position: relative;
+   box-shadow:0 0 5px rgb(28 0 0); 
+}
+
+.logo > img {
+   display: block;
+   width: 24vh;
+   margin: 0 auto;
+
+
+}
+
+
+.heart {
+   color: #050505;
+   
+ }
+
+
+.heart1:hover{
+   transition: cubic-bezier(.64,0,1,-0.19);
+   font-weight: 600;
+   color: #9356dc;
+}
+
+
+ 
+ .heart1 {
+   position: initial;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .heart:hover .heart1 {
+   transform: scale(1.2);
+   cursor: pointer;
+ }
+ 
+
+
+.entries {
+   width: 100%;
+   height:64rem;;
+   border-top-left-radius: 44px;
+   background-color: var(--background-map);
+   border-top-right-radius: 44px;
+   margin: -60px 0 0 0;
+}
+
+.entries__header {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 127px;
+    font-family: 'Shrikhand';
+    font-size: 38px;
+    padding: 34px 0px 0 21px;
+}
+
+.entries__paragraph {
+   padding: 0px 0 0 19px;
+   font-size: 18px;
+   position: relative; 
+   color: var(--background-footer);
+ }
+ 
+ .entries__paragraph::before {
+   content: "";
+   position: absolute;
+   left: 19px;
+   bottom: -8px;
+   height: 3px;
+   width: calc(20% - 28px);
+   background-color: var(--tertiary);
+ }
+
+.entries__card {
+   background: var(--background);
+   margin: 20px;
+   border-radius: 10px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.entries__card--p {
+   display: flex;
+   margin: 0;
+   font-size: 12px;
+}
+.entries__card--p span {
+   font-weight: 700;
+}
+
+ .entries__card--citrus {
+   padding-left: 197px ;
+ }
+ 
+ .entries__card--vegetable {
+   padding-left: 79px;
+ }
+ 
+ .entries__card--onion {
+   padding-left: 233px;
+ }
+ 
+
+.entries__card--scallops {
+   padding-left: 165px ;
+ }
+ 
+ .entries__card--margret {
+   padding-left: 157px ;
+ }
+ 
+ .entries__card--hen {
+   padding-left: 145px ;
+ }
+ 
+ .entries__card--floral {
+   padding-left: 165px;
+ }
+ 
+ .entries__card--choclate {
+   padding-left: 224px;
+ }
+ 
+ .entries__card--napolean {
+   padding-left:108px ;
+ }
+ 
+
+ .btn {
+   background: #9356dc;
+   background-image: linear-gradient(to left, #9356dc, #ff79da);
+   border-radius: 28px;
+   font-family:'Roboto', sans-serif ;
+   color: #ffffff;
+   font-size: 13px;
+   padding: 10px 50px;
+   text-decoration: none;
+   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+   border: none;
+   margin: 13px 118px;
+   }
+
+
+
+
+
+.entries__card h2{
+   font-size: 16px;
+   margin: 0 0 5px 0;
+}
+
+
+
+
+
+
+/* Footer */
+.footer-menu{
+    width: 100%;
+    background-color: var(--background-footer);
+    height: 200px;
+    color:var(--footer-letter);
+    
+ }
+ 
+ .footer-menu h4 {
+    font-family: 'Shrikhand', cursive;
+    color: var(--footer-letter);
+    font-weight: 200;
+    padding: 21px 0px 0px 20px;
+    margin: 0;
+ }
+ 
+ .footer-menu p {
+    padding: 0 0 0 19px;
+    margin: 12px 0 0 0;
+ }
+ 
+ .footer-menu a {
+   text-decoration: none;
+   color: var(--footer-letter);
+}
