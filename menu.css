@@ -41,15 +41,33 @@ font-family:'Roboto', sans-serif ;
 
 /* Logo */
 
-.logo-container {
-   position: relative;
+.logo__container {
    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
+.logo--icon {
+   display: flex;
+   align-content: flex-start;
+   flex-wrap: wrap;
+}
+
+.logo--image img {
+   
+   width: 23vh;
+}
 .fa-arrow-left{
-   position: relative;
-   top:40%;
-   right: -7%;
+    position: relative;
+   top: 25%;
+   right: 80px;
+   color: black;
+   font-size: 22px;
+}
+
+.fa-arrow-left:hover{
+   transform: scale(1.1);
 }
 
 .arrow {
@@ -64,32 +82,29 @@ font-family:'Roboto', sans-serif ;
    border-right: 10px solid #000;
 }
 
-.logo {
-   display: inline-block;
-   margin-left: 20px;
-}
+
 
 .logo {
-   width: 100%;
-   height: 60px;
-   margin: 0;
-   background-color: var(--background);
-   position: relative;
-   box-shadow:0 0 5px rgb(28 0 0); 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
+
 
 .logo > img {
    display: block;
    width: 24vh;
-   margin: 0 auto;
-
-
 }
+/* End Logo */
+
+/* Menu Header */
 
 
 .heart {
    color: #050505;
-   
+   position: relative;
+   top: 32px;
+   right: 31px;
  }
 
 
@@ -113,9 +128,13 @@ font-family:'Roboto', sans-serif ;
  
 
 
+
+
+/* Menu header end */
+
 .entries {
    width: 100%;
-   height:64rem;;
+   height:72rem;;
    border-top-left-radius: 44px;
    background-color: var(--background-map);
    border-top-right-radius: 44px;
@@ -124,15 +143,21 @@ font-family:'Roboto', sans-serif ;
 
 .entries__header {
    display: flex;
-    flex-wrap: wrap;
-    gap: 127px;
-    font-family: 'Shrikhand';
-    font-size: 38px;
-    padding: 34px 0px 0 21px;
+   flex-wrap: wrap;
+   font-family: 'Shrikhand';
+   font-size: 23px;
+   padding-left: 18px;
+   justify-content: space-between;
 }
 
+
+.entries__header h4 {
+   font-size: 24px;
+}
+
+
 .entries__paragraph {
-   padding: 0px 0 0 19px;
+  padding-left: 23px;
    font-size: 18px;
    position: relative; 
    color: var(--background-footer);
@@ -152,56 +177,26 @@ font-family:'Roboto', sans-serif ;
    background: var(--background);
    margin: 20px;
    border-radius: 10px;
-   padding: 10px;
+   padding: 12px;
    display: flex;
    flex-direction: column;
 }
 
 .entries__card--p {
    display: flex;
-   margin: 0;
    font-size: 12px;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0;
 }
 .entries__card--p span {
    font-weight: 700;
 }
 
- .entries__card--citrus {
-   padding-left: 197px ;
- }
- 
- .entries__card--vegetable {
-   padding-left: 79px;
- }
- 
- .entries__card--onion {
-   padding-left: 233px;
- }
- 
-
-.entries__card--scallops {
-   padding-left: 165px ;
- }
- 
- .entries__card--margret {
-   padding-left: 157px ;
- }
- 
- .entries__card--hen {
-   padding-left: 145px ;
- }
- 
- .entries__card--floral {
-   padding-left: 165px;
- }
- 
- .entries__card--choclate {
-   padding-left: 224px;
- }
- 
- .entries__card--napolean {
-   padding-left:108px ;
- }
+ .entries__card h2{
+   font-size: 16px;
+   margin: 0 0 5px 0;
+}
  
 
  .btn {
@@ -216,20 +211,19 @@ font-family:'Roboto', sans-serif ;
    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
    border: none;
    margin: 13px 118px;
+   transition: all 0.2s ease-in-out; /* add a transition effect for smoother animation */
+   cursor: pointer;
    }
 
+   .btn:hover {
+      background-color: #b271e6; 
+      box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px; 
+    }
 
-
-
-
-.entries__card h2{
-   font-size: 16px;
-   margin: 0 0 5px 0;
-}
-
-
-
-
+   .button {
+      display: flex;
+      justify-content: center;
+   }
 
 
 /* Footer */

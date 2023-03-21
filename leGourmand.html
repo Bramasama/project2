@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="bastille.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +21,9 @@
 <body>
     <header>
         <nav>
-            <i class="fa fa-facebook"></i>
-            <!-- Logo -->
-            <figure class="logo">
-                <img src="images/logo/ohmyfood.png" alt="image of the logo">
+            <figure class="logo__container">
+                <div class="logo--icon"><a href="index.html"><i class="fa fa-arrow-left"></a></i></div>
+                <div class="logo--image"><img src="images/logo/ohmyfood.png" alt="image of the logo"></div>
             </figure>
             <!-- Logo End -->
             <div class="background-image">
@@ -35,7 +34,7 @@
 
     <main>
         <div class="entries">
-            <div class="entries__header">Le Gourmand<span class="heart"><i class="fa fa-regular fa-heart heart1"></i></span></div>
+            <div class="entries__header"><h4>Le Gourmand</h4><span class="heart"><i class="fa fa-regular fa-heart heart1"></i></span></div>
             <div class="entries__paragraph"><p>ENTREES</p></div>
             <div class="entries__card"><h2>Tuna Carpaccio</h2> <div><p class="entries__card--p">Seasoned with yuzu<span class="entries__card--citrus">25&euro;</span></p></div></div>
             <div class="entries__card"><h2>Crunchy Lobster Croquets</h2> <div><p class="entries__card--p">With seasonal vegetables<span class="entries__card--vegetable">35&euro;</span></p></div></div>
@@ -48,7 +47,7 @@
             <div class="entries__card"><h2>Assorted Dessert Plate</h2> <div><p class="entries__card--p">Chef's choice<span class="entries__card--floral">18&euro;</span></p></div></div>
             <div class="entries__card"><h2>Cr&#232;me brul&#232;e</h2> <div><p class="entries__card--p">Revisited<span class="entries__card--choclate">22&euro;</span></p></div></div>
             <div class="entries__card"><h2>Tiramisu</h2> <div ><p class="entries__card--p">With hazelnuts<span class="entries__card--napolean">23&euro;</span></p></div></div>
-            <button class="btn">Order</button>
+            <div class="button"><button class="btn">Order</button></div>
         </div>
     </main>
 
