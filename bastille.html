@@ -3,70 +3,180 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="menu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
-        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c82eb9b8d7.js" crossorigin="anonymous"></script>
     <title>Bastille</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            
-            <!-- Logo -->
-            <figure class="logo__container">
-                <div class="logo--icon"><a href="index.html"><i class="fa fa-arrow-left"></a></i></div>
-                <div class="logo--image"><img src="images/logo/ohmyfood.png" alt="image of the logo"></div>
-            </figure>
-            <!-- Logo End -->
-            <div class="background-image">
-              <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">  
+    <nav>
+        <div class="menu-body">
+            <header>
+                <img src="images/logo/ohmyfood.png" alt="oh my food logo" title="oh my food logo">
+                <a href="../index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+            </header>
+            <div class="background">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille" title="Bastille">
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main>
-        <div class="entries">
-            <div class="entries__header"><h4>Bastille</h4><span class="heart"><i class="fa fa-regular fa-heart heart1"></i></span></div>
-            <div class="entries__paragraph"><p>ENTREES</p></div>
-            <div class="entries__card"><h2>Citrus Squid Carpaccio</h2> <div><p class="entries__card--p">With orange zest<span class="entries__card--citrus">25&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Grandmother's Vegetable Soup</h2> <div><p class="entries__card--p">Carrots, parsnips, Jerusalem artichoke<span class="entries__card--vegetable">35&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Onion Soup</h2> <div ><p class="entries__card--p">Revisited<span class="entries__card--onion">20&euro;</span></p></div></div>
-            <div class="entries__paragraph"><p>MAIN DISH</p></div>
-            <div class="entries__card"><h2>Scallops</h2> <div><p class="entries__card--p">With mashed parsnip<span class="entries__card--scallops">40&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Margret de canard</h2> <div><p class="entries__card--p">With mashed potatoes<span class="entries__card--margret">35&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Game Hen</h2> <div ><p class="entries__card--p">With vegetable gnocchis<span class="entries__card--hen">44&euro;</span></p></div></div>
-            <div class="entries__paragraph"><p>DESSERTS</p></div>
-            <div class="entries__card"><h2>Floral Ice Cream</h2> <div><p class="entries__card--p">With hazelnut butter<span class="entries__card--floral">18&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Chocolate Lava Cake</h2> <div><p class="entries__card--p">Revisited<span class="entries__card--choclate">22&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Napolean</h2> <div ><p class="entries__card--p">With blueberries and marzipan<span class="entries__card--napolean">23&euro;</span></p></div></div>
-            <div class="button"><button class="btn">Order</button></div>
+        <div class="menu-section">
+            <div class="title">
+                <p>Bastille</p>
+                <span class="heart">
+                    <i class="fa-solid fa-heart fa-stack-1x fa-lg fa-fw"></i>
+                    <i class="fa-regular fa-heart fa-stack-1x fa-lg fa-fw"></i>
+                </span>
+            </div>
+            <div class="menu app">
+                <p class="subtitle"><span>ENTR</span>EES</p>
+                <div class="menu-cards-container">
+
+                    <div class="card-wrapper first">
+                        <div class="card-text">
+                            <p class="card-title">Citrus Squid Carpaccio</p>
+                            <p class="card-description">With orange zest</p>
+                        </div>
+                        <div class="price">
+                            <p>25€</p>
+                        </div>
+
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+
+                    <div class="card-wrapper second">
+                        <div class="card-text">
+                            <p class="card-title">Grandmother's Vegetable Soup</p>
+                            <p class="card-description">Carrots, parsnips, Jerusalem artichoke</p>
+                        </div>
+                        <div class="price">
+                            <p>35€</p>
+                        </div>
+
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                    <div class="card-wrapper third">
+                        <div class="card-text">
+                            <p class="card-title">Onion Soup</p>
+                            <p class="card-description">Revisited</p>
+                        </div>
+                        <div class="price">
+                            <p>20€</p>
+                        </div>
+
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                </div>
+
+                <div class="menu ent">
+                    <p class="subtitle"><span>MAIN</span> DISH</p>
+                    <div class="menu-cards-container">
+
+                        <div class="card-wrapper first">
+                            <div class="card-text">
+                                <p class="card-title">Scallops</p>
+                                <p class="card-description">With mashed parsnip</p>
+                            </div>
+                            <div class="price">
+                                <p>40€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="card-wrapper second">
+                            <div class="card-text">
+                                <p class="card-title">Magret de canard</p>
+                                <p class="card-description">With mashed potatoes</p>
+                            </div>
+                            <div class="price">
+                                <p>35€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="card-wrapper third">
+                            <div class="card-text">
+                                <p class="card-title">Game hen</p>
+                                <p class="card-description">With vegetable gnoccis</p>
+                            </div>
+                            <div class="price">
+                                <p>44€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu des">
+                    <p class="subtitle"><span>DESS</span>ERTS</p>
+                    <div class="menu-cards-container">
+                        <div class="card-wrapper first">
+                            <div class="card-text">
+                                <p class="card-title">Floral Ice Cream</p>
+                                <p class="card-description">With hazelnut butter</p>
+                            </div>
+                            <div class="price">
+                                <p>18€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="card-wrapper second">
+                            <div class="card-text">
+                                <p class="card-title">Chocolate Lava Cake</p>
+                                <p class="card-description">Revisited</p>
+                            </div>
+                            <div class="price">
+                                <p>22€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                        <div class="card-wrapper third">
+                            <div class="card-text">
+                                <p class="card-title">Napolean</p>
+                                <p class="card-description">With blueberries and marzipan</p>
+                            </div>
+                            <div class="price">
+                                <p>23€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="main-button">Order</button>
+                </div>
+            </div>
         </div>
     </main>
 
-
-    
-   
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-menu">
-          <h4><a href="#">ohmyfood</a></h4>
-          <p><i class="fas fa-utensils"></i> <a href="#">Suggest a restaurant</a></p>
-          <p><i class="fas fa-handshake-angle"></i> <a href="#">Become a partner</a></p>
-          <p><a href="#">Legal</a></p>
-          <p><a href="#">Contact</a></p>
-        </div>
-      </footer>
-
+    <footer>
+        <p>ohmyfood</p>
+        <ul class="list-1">
+            <li class="list-item">
+                <a href="#/">
+                    <i class="fa-sharp fa-solid fa-utensils"></i>
+                    Suggest a restaurant
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="#/">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    Become a partner
+                </a>
+            </li>
+            <li><a href="#/">Legal</a></li>
+            <li><a href="mailto:info@ohmyfood.com">Contact</a></li>
+        </ul>
+    </footer>
 </body>
-
 </html>

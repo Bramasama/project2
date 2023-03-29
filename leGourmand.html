@@ -3,68 +3,178 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="menu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <title>Le Gourmand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c82eb9b8d7.js" crossorigin="anonymous"></script>
+    <title>Le Grourmand</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <figure class="logo__container">
-                <div class="logo--icon"><a href="index.html"><i class="fa fa-arrow-left"></a></i></div>
-                <div class="logo--image"><img src="images/logo/ohmyfood.png" alt="image of the logo"></div>
-            </figure>
-            <!-- Logo End -->
-            <div class="background-image">
-              <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">  
+<nav>
+    <div class="menu-body">
+        <header>
+            <img src="images/logo/ohmyfood.png" alt="oh my food logo" title="oh my food logo">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+        </header>
+        <div class="background">
+            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Le gourmand" title="Le gourmand">
+        </div>
+</nav>
+        <div class="menu-section">
+            <div class="title">
+                <p>Le Gourmand</p>
+                <span class="heart">
+                    <i class="fa-solid fa-heart fa-stack-1x fa-lg fa-fw"></i>
+                    <i class="fa-regular fa-heart fa-stack-1x fa-lg fa-fw"></i>
+                </span>
             </div>
-        </nav>
-    </header>
+            <div class="menu app">
+                <p class="subtitle"><span>ENTR</span>EES</p>
+                <div class="menu-cards-container">
 
-    <main>
-        <div class="entries">
-            <div class="entries__header"><h4>Le Gourmand</h4><span class="heart"><i class="fa fa-regular fa-heart heart1"></i></span></div>
-            <div class="entries__paragraph"><p>ENTREES</p></div>
-            <div class="entries__card"><h2>Tuna Carpaccio</h2> <div><p class="entries__card--p">Seasoned with yuzu<span class="entries__card--citrus">25&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Crunchy Lobster Croquets</h2> <div><p class="entries__card--p">With seasonal vegetables<span class="entries__card--vegetable">35&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Mushroom Soup</h2> <div ><p class="entries__card--p">With truffles<span class="entries__card--onion">20&euro;</span></p></div></div>
-            <div class="entries__paragraph"><p>MAIN DISH</p></div>
-            <div class="entries__card"><h2>Roast Chicken with Provincal Herbs</h2> <div><p class="entries__card--p">With truffle cream<span class="entries__card--scallops">40&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Roasted Lobster</h2> <div><p class="entries__card--p">With seasonal vegetables<span class="entries__card--margret">35&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Angust Beef Ribs</h2> <div ><p class="entries__card--p">With mashed parsnip<span class="entries__card--hen">44&euro;</span></p></div></div>
-            <div class="entries__paragraph"><p>DESSERTS</p></div>
-            <div class="entries__card"><h2>Assorted Dessert Plate</h2> <div><p class="entries__card--p">Chef's choice<span class="entries__card--floral">18&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Cr&#232;me brul&#232;e</h2> <div><p class="entries__card--p">Revisited<span class="entries__card--choclate">22&euro;</span></p></div></div>
-            <div class="entries__card"><h2>Tiramisu</h2> <div ><p class="entries__card--p">With hazelnuts<span class="entries__card--napolean">23&euro;</span></p></div></div>
-            <div class="button"><button class="btn">Order</button></div>
+                    <div class="card-wrapper first">
+                        <div class="card-text">
+                            <p class="card-title">Tuna Carpaccio</p>
+                            <p class="card-description">Seasoned with yuzu</p>
+                        </div>
+                        <div class="price">
+                            <p>25€</p>
+                        </div>
+
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+
+                    <div class="card-wrapper second">
+                        <div class="card-text">
+                            <p class="card-title">Crunchy Lobster Croquets</p>
+                            <p class="card-description">With seasonal vegetables</p>
+                        </div>
+                        <div class="price">
+                            <p>35€</p>
+                        </div>
+
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                    <div class="card-wrapper third">
+                        <div class="card-text">
+                            <p class="card-title">Mushroom soup</p>
+                            <p class="card-description">With truffles</p>
+                        </div>
+                        <div class="price">
+                            <p>20€</p>
+                        </div>
+
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                </div>
+
+                <div class="menu ent">
+                    <p class="subtitle"><span>MAIN</span> DISH</p>
+                    <div class="menu-cards-container">
+
+                        <div class="card-wrapper first">
+                            <div class="card-text">
+                                <p class="card-title">Roast Chicken with Provincal Herbs</p>
+                                <p class="card-description">With truffle cream</p>
+                            </div>
+                            <div class="price">
+                                <p>40€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="card-wrapper second">
+                            <div class="card-text">
+                                <p class="card-title">Roasted Lobster</p>
+                                <p class="card-description">With seasonal vegetables</p>
+                            </div>
+                            <div class="price">
+                                <p>35€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="card-wrapper third">
+                            <div class="card-text">
+                                <p class="card-title">Angust Beef Ribs</p>
+                                <p class="card-description">With mashed parsnips</p>
+                            </div>
+                            <div class="price">
+                                <p>44€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu des">
+                    <p class="subtitle"><span>DESS</span>ERTS</p>
+                    <div class="menu-cards-container">
+                        <div class="card-wrapper first">
+                            <div class="card-text">
+                                <p class="card-title">Assorted Dessert Plate</p>
+                                <p class="card-description">Chef's choice</p>
+                            </div>
+                            <div class="price">
+                                <p>18€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="card-wrapper second">
+                            <div class="card-text">
+                                <p class="card-title">Crème brulée</p>
+                                <p class="card-description">Revisited</p>
+                            </div>
+                            <div class="price">
+                                <p>22€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                        <div class="card-wrapper third">
+                            <div class="card-text">
+                                <p class="card-title">Tiramisu</p>
+                                <p class="card-description">With hazelnuts</p>
+                            </div>
+                            <div class="price">
+                                <p>23€</p>
+                            </div>
+
+                            <div class="check"><i class="fa-solid fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="main-button">Order</button>
+                </div>
+            </div>
         </div>
-    </main>
 
-
-    
-   
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-menu">
-          <h4><a href="#">ohmyfood</a></h4>
-          <p><i class="fas fa-utensils"></i> <a href="#">Suggest a restaurant</a></p>
-          <p><i class="fas fa-handshake-angle"></i> <a href="#">Become a partner</a></p>
-          <p><a href="#">Legal</a></p>
-          <p><a href="#">Contact</a></p>
-        </div>
-      </footer>
-
+        <footer>
+            <p>ohmyfood</p>
+            <ul class="list-1">
+                <li class="list-item">
+                    <a href="#/">
+                        <i class="fa-sharp fa-solid fa-utensils"></i>
+                        Suggest a restaurant
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#/">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        Become a partner
+                    </a>
+                </li>
+                <li><a href="#/">Legal</a></li>
+                <li><a href="mailto:info@ohmyfood.com">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>
